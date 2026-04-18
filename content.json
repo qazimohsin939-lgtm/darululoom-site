@@ -53,24 +53,15 @@
       "caption": "مسجد کی نئی بیرونی ساخت اور بلند دیواروں کا منظر"
     }
   ],
-  "videos": [
-    {
-      "src": "assets/videos/stage-1.mp4",
-      "poster": "assets/images/stage-1.jpg",
-      "title": "تعمیر نو کے ابتدائی مراحل",
-     
-    },
-    {
-      "src": "assets/videos/stage-2.mp4",
-      "poster": "assets/images/stage-2.jpg",
-      "title": "ابتدائی مراحل — حصہ دوم",
-     
-    },
-    {
-      "src": "assets/videos/stage-3.mp4",
-      "poster": "assets/images/stage-3.jpg",
-      "title": "لینٹر کے بعد",
-      "caption": "تعمیر نو کی پیش رفت کا بعد کا مرحلہ۔"
-    }
-  ]
-}
+ "videos": [
+  {
+    "src": "assets/videos/stage-1.mp4",
+    "poster": "assets/images/stage-1.jpeg",
+    "title": "تعمیر کے ابتدائی مراحل"
+  },
+  {
+    "src": "assets/videos/stage-2.mp4",
+    "poster": "assets/images/stage-2.jpeg",
+    "title": "مسجد کی تعمیر جاری"
+  }
+]
