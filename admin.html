@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin | دارالعلوم کلورکوٹ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h3>سادہ Admin / Content Editor</h3>
+          <p>یہ صفحہ content.js کو آسانی سے edit کرنے کے لیے ہے۔ یہاں تبدیلیاں کر کے نیچے Export بٹن سے نئی content.js فائل حاصل کریں، پھر اسے اصل site folder میں پرانی فائل سے replace کر دیں۔</p>
+        </div>
+      </div>
+      <div class="card">
+        <label><strong>content.js کا متن</strong></label>
+        <textarea id="editor" rows="22" style="margin-top:10px"></textarea>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+          <button class="btn btn-secondary" id="downloadBtn">Export content.js</button>
+          <button class="btn btn-primary" id="copyBtn">Copy Text</button>
+          <a class="btn btn-primary" href="index.html">واپس ویب سائٹ پر جائیں</a>
+        </div>
+        <div class="notice" style="margin-top:16px">
+          مشورہ: اصل تصاویر کو <code>assets</code> فولڈر میں رکھیں اور content.js میں ان کے path مثلاً <code>assets/masjid-1.jpg</code> درج کریں۔
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    fetch('content.js').then(r => r.text()).then(t => document.getElementById('editor').value = t);
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      const blob = new Blob([document.getElementById('editor').value], {type:'application/javascript'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'content.js';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      await navigator.clipboard.writeText(document.getElementById('editor').value);
+      alert('Content copied');
+    });
+  </script>
+</body>
+</html>
