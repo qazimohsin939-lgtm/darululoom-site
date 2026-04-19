@@ -1,1 +1,114 @@
-<!doctype html><html lang="ur" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>مدرسہ عربیہ دارالعلوم</title><meta name="description" content=""/><meta name="keywords" content=""/><meta name="theme-color" content="#0f5b43"/><link rel="stylesheet" href="style.css"/></head><body><div class="topbar"><div class="container topbar-inner"><div class="jamiat" id="jamiat"></div><div class="flag-wrap"><div class="pk-flag"><span class="moon"></span><span class="star">★</span></div><span class="flag-label">پاکستان</span></div><a id="waTop" class="btn gold" target="_blank" rel="noopener">WhatsApp رابطہ</a></div></div><header class="hero"><div class="container hero-grid"><div class="hero-copy"><div class="eyebrow">دینی تعلیم، مسجدی خدمت، تعمیر و اشاعت</div><h1 id="madrasaName"></h1><h2 id="mosqueName"></h2><p class="lead">یہ ویب سائٹ ادارہ، جامع مسجد، تعارف، تعمیر نو کی تازہ جھلکیوں، تصویری گیلری اور ویڈیو اپڈیٹس کو ایک جگہ پیش کرتی ہے۔</p><div class="meta-grid"><div><strong>مہتمم</strong><span id="manager"></span></div><div><strong>امام مسجد</strong><span id="imam"></span></div><div><strong>مقام</strong><span id="address"></span></div></div></div><div class="hero-card"><div class="brand-mark"><img src="assets/images/emblem.svg" alt="Darul Uloom Emblem"/></div><h3>ادارہ کے مرکزی عنوانات</h3><ul class="feature-list"><li>جامع تعارف اور تاریخی پس منظر</li><li>تعمیر نو کی الگ نمایاں section</li><li>تصویری گیلری اور خاموش/صاف ویڈیوز</li><li>Google Map اور WhatsApp رابطہ</li></ul></div></div></header><main><section class="section"><div class="container two-col"><div><div class="section-title">تعارف</div><div id="aboutText" class="prose"></div></div><aside class="side-card"><div class="side-heading">اہم شخصیات</div><div class="person-card"><small>بانی</small><strong>حضرت مولانا قاضی عبدالرحمان رحمۃ اللہ علیہ</strong><span>فاضل مظاہر العلوم سہارن پور، انڈیا</span></div><div class="person-card"><small>مہتمم</small><strong>قاضی مسعود الحسن</strong><span>جامعہ اور ملحقہ مسجد کے نگران</span></div><div class="person-card"><small>امام مسجد</small><strong>مولانا حافظ معراج الدین</strong><span>جامع مسجد توحیدیہ (اقصیٰ مسجد)</span></div></aside></div></section><section class="section alt"><div class="container"><div class="section-title" id="renovationTitle"></div><div id="renovationBody" class="prose narrow"></div><blockquote id="renovationQuote" class="quote"></blockquote></div></section><section class="section"><div class="container"><div class="section-title">تصویری گیلری</div><div id="gallery" class="gallery-grid"></div></div></section><section class="section alt"><div class="container"><div class="section-title">تعمیر نو ویڈیو اپڈیٹس</div><p class="note">نوٹ: آپ کی ہدایت کے مطابق ویڈیوز سے پس منظر کی آواز ہٹا کر خاموش version شامل کیا گیا ہے۔ اگر آپ چاہیں تو اگلے مرحلے میں آپ کی فراہم کردہ ریکارڈ شدہ تلاوت/نظم/حدیث کی آواز بھی ان میں شامل کی جا سکتی ہے۔</p><div id="videos" class="video-grid"></div></div></section><section class="section"><div class="container contact-grid"><div><div class="section-title">رابطہ اور مقام</div><div class="contact-card"><p><strong>ادارہ:</strong> <span id="contactMadrasa"></span></p><p><strong>مسجد:</strong> <span id="contactMosque"></span></p><p><strong>ایڈریس:</strong> <span id="contactAddress"></span></p><div class="btn-row"><a id="waBottom" class="btn green" target="_blank" rel="noopener">WhatsApp</a><a id="mapLink" class="btn gold" target="_blank" rel="noopener">Google Map</a></div></div></div><iframe id="mapFrame" class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></section></main><footer class="footer"><div class="container footer-inner"><div><strong id="footerTitle"></strong><p>جمیعت اشاعت التوحید والسنہ پاکستان کے نسبت سے دینی خدمت، تعلیم اور مسجدی تعمیر کے کام کی ایک مختصر پیشکش۔</p></div><a id="waFloat" class="wa-float" target="_blank" rel="noopener">WhatsApp</a></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>مدرسہ عربیہ دارالعلوم</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="theme-color" content="#0f5b43"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="jamiat" id="jamiat"></div>
+    <div class="flag-wrap"><div class="pk-flag"><span class="moon"></span><span class="star">★</span></div><span>پاکستان</span></div>
+    <a id="waTop" class="btn gold" href="#" target="_blank" rel="noopener">WhatsApp رابطہ</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">دینی تعلیم، مسجدی خدمت، تعمیر و اشاعت</div>
+      <h1 id="madrasaName"></h1>
+      <h2 id="mosqueName"></h2>
+      <p class="lead" id="siteDesc"></p>
+      <div class="meta-grid">
+        <div><strong>مہتمم</strong><span id="manager"></span></div>
+        <div><strong>امام مسجد</strong><span id="imam"></span></div>
+        <div><strong>مقام</strong><span id="address"></span></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="brand-mark"><img src="assets/images/emblem.svg" alt="Darul Uloom Emblem"/></div>
+      <h3>ادارہ کے مرکزی عنوانات</h3>
+      <ul class="feature-list">
+        <li>جامع تعارف اور تاریخی پس منظر</li>
+        <li>تعمیر نو کی الگ نمایاں section</li>
+        <li>تصویری گیلری اور ویڈیو اپڈیٹس</li>
+        <li>رابطہ، واٹس ایپ اور Google Maps</li>
+      </ul>
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn green" href="#about">تعارف پڑھیں</a>
+        <a class="btn gold" href="#contact">رابطہ و مقام</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div><h3>تعارف</h3><p>بانی، علمی پس منظر، ادارے کے قیام اور موجودہ انتظامی خدمات کا خلاصہ۔</p></div>
+    </div>
+    <div class="grid-2">
+      <div class="card about" id="aboutBody"></div>
+      <div class="card quote">
+        <h3 id="renoTitle"></h3>
+        <div id="renoBody"></div>
+        <p id="renoQuote"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery-section">
+  <div class="container">
+    <div class="section-head">
+      <div><h3>تصویری گیلری</h3><p>ادارہ، مسجد اور تعمیر نو کے مختلف مراحل کی جھلکیاں۔</p></div>
+    </div>
+    <div class="cards" id="gallery"></div>
+  </div>
+</section>
+
+<section class="section" id="video-section">
+  <div class="container">
+    <div class="section-head">
+      <div><h3>ویڈیو اپڈیٹس</h3><p>تعمیر نو کے عملی مراحل کی منتخب ویڈیوز۔</p></div>
+    </div>
+    <div class="cards" id="videos"></div>
+    <div class="audio-note">الگ audio فائل بھی package میں شامل کر دی گئی ہے: <strong>assets/audio/seer.ogg</strong></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div><h3>رابطہ اور مقام</h3><p>Google Maps اور WhatsApp کے ذریعے فوری رسائی۔</p></div>
+    </div>
+    <div class="contact-grid">
+      <div class="card">
+        <div class="contact-item"><strong>ادارہ:</strong><br/>مدرسہ عربیہ دارالعلوم</div>
+        <div class="contact-item"><strong>مسجد:</strong><br/>جامع مسجد توحیدیہ (اقصیٰ مسجد)</div>
+        <div class="contact-item"><strong>پتہ:</strong><br/><span id="footerAddress"></span></div>
+        <div class="contact-item"><strong>Google Maps:</strong><br/><a id="mapLink" class="btn green" href="#" target="_blank" rel="noopener">نقشہ کھولیں</a></div>
+        <div class="contact-item"><strong>WhatsApp:</strong><br/><a id="waFloat" class="btn gold" href="#" target="_blank" rel="noopener">فوری رابطہ</a></div>
+      </div>
+      <iframe id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div><h3 id="footerName"></h3><p class="small">یہ website دوبارہ مکمل package کی شکل میں تیار کی گئی ہے تاکہ GitHub پر upload کرنے کے بعد مواد ضائع نہ ہو۔</p></div>
+    <div><h4>اہم روابط</h4><p class="small"><a href="#about">تعارف</a><br><a href="#gallery-section">گیلری</a><br><a href="#video-section">ویڈیوز</a><br><a href="#contact">رابطہ</a></p></div>
+    <div><h4>مقام</h4><p class="small" id="footerAddress"></p></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
